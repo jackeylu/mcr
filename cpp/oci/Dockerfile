@@ -1,4 +1,4 @@
-FROM registry.cn-hangzhou.aliyuncs.com/jackeylv/cpp:boost
+FROM registry.cn-hangzhou.aliyuncs.com/jackeylv/cpp:dev
 
 RUN apt-get update && apt-get -y install libaio1 \
     && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/*
